@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  width: 420px;
+  margin-top: 100px;
+  margin-left: 550px;
+}
+form .input1, form input:nth-child(6), form input:nth-child(5), form input:nth-child(4), form input:nth-child(3), form input:nth-child(2), form input:nth-child(1) {
+  width: 350px;
+  height: 50px;
+  display: block;
+  padding: 10px;
+  border: none;
+  font-size: 22px;
+  margin-bottom: 20px;
+  outline: none;
+}
+form input:nth-child(1) {
+  border-bottom: 3px solid rgb(112, 106, 106);
+}
+form input:nth-child(2) {
+  border-bottom: 3px solid silver;
+}
+form input:nth-child(3) {
+  border-bottom: 3px solid rgb(0, 158, 97);
+}
+form input:nth-child(4) {
+  border-bottom: 3px solid rgb(0, 158, 97);
+  caret-color: rgb(0, 158, 97);
+}
+form input:nth-child(5) {
+  border-bottom: 3px solid silver;
+}
+form input:nth-child(6) {
+  border-bottom: 3px solid red;
+}
+form .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 55px;
+  margin-bottom: 10px;
+}
+form .card p {
+  color: red;
+  font-family: sans-serif;
+}
+form .card i {
+  color: red;
+}
+form .input1 {
+  border-bottom: 3px dotted silver;
+}/*# sourceMappingURL=main.css.map */

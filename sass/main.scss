@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  form {
+    width: 420px;
+    margin-top: 100px;
+    margin-left: 550px;
+    %input_global {
+      width: 350px;
+      height: 50px;
+      display: block;
+      padding: 10px;
+      border: none;
+      font-size: 22px;
+      margin-bottom: 20px;
+      outline: none;
+    }
+    @mixin input_mix($border) {
+      border-bottom: $border;
+    }
+    input {
+      &:nth-child(1) {
+        @extend %input_global;
+        @include input_mix(3px solid rgb(112, 106, 106));
+      }
+      &:nth-child(2) {
+        @extend %input_global;
+        @include input_mix(3px solid silver);
+      }
+      &:nth-child(3) {
+        @extend %input_global;
+        @include input_mix(3px solid rgb(0, 158, 97));
+      }
+      &:nth-child(4) {
+        @extend %input_global;
+        @include input_mix(3px solid rgb(0, 158, 97));
+        caret-color: rgb(0, 158, 97);
+      }
+      &:nth-child(5) {
+        @extend %input_global;
+        @include input_mix(3px solid silver);
+      }
+      &:nth-child(6) {
+        @extend %input_global;
+        @include input_mix(3px solid red);
+      }
+    }
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 55px;
+      margin-bottom: 10px;
+      p {
+        color: red;
+        font-family: sans-serif;
+      }
+      i {
+        color: red;
+      }
+    }
+    .input1 {
+      @extend%input_global;
+      @include input_mix(3px dotted silver);
+    }
+  }
